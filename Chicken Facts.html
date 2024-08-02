@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken Facts</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://t3.ftcdn.net/jpg/02/49/68/72/360_F_249687268_Yl4AswCdwBQS7NA6hczKq0pfnjQs02UP.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #333;
+            scroll-behavior: smooth; /* Smooth scrolling */
+        }
+        header {
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+            color: #000000; /* Black text */
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            backdrop-filter: blur(10px); /* Blur effect for modern feel */
+            position: sticky; /* Sticky header */
+            top: 0;
+            z-index: 1000;
+        }
+        .hero {
+            background-image: url('https://cdn.britannica.com/18/137318-050-29F7072E/rooster-Rhode-Island-Red-roosters-chicken-domestication.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #ffffff; /* White text */
+            padding: 80px 20px;
+            text-align: center;
+            box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5); /* Soft inner shadow */
+            backdrop-filter: blur(10px); /* Blur effect for modern feel */
+            position: relative; /* Necessary for parallax effect */
+            z-index: 1;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            font-weight: 300;
+        }
+        main {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+            background-color: rgba(255, 255, 255, 0.9); /* Slightly opaque background for readability */
+            border-radius: 8px; /* Rounded corners */
+        }
+        h2 {
+            font-size: 2.5em;
+            color: #333;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.1); /* Light gray underline */
+            padding-bottom: 10px;
+            margin-bottom: 40px;
+        }
+        .fact {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+            border: 1px solid rgba(0, 0, 0, 0.1); /* Light gray border */
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 12px; /* Rounded corners */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            overflow: hidden;
+            backdrop-filter: blur(10px); /* Blur effect for modern feel */
+            transition: transform 0.3s ease-in-out; /* Smooth transition */
+        }
+        .fact:hover {
+            transform: scale(1.02); /* Slight zoom effect on hover */
+        }
+        .fact img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px; /* Rounded corners */
+            display: block;
+        }
+        .fact h3 {
+            margin-top: 20px;
+            font-size: 1.8em;
+            color: #333;
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5em;
+            }
+            .hero p {
+                font-size: 1.1em;
+            }
+            .fact {
+                padding: 15px;
+            }
+            h2 {
+                font-size: 2em;
+            }
+        }
+        /* Parallax Effect */
+        .parallax {
+            background-image: url('https://cdn.britannica.com/18/137318-050-29F7072E/rooster-Rhode-Island-Red-roosters-chicken-domestication.jpg');
+            min-height: 400px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            color: #ffffff;
+            text-align: center;
+            padding: 80px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .parallax h2 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Chicken Facts</h1>
+</header>
+
+<section class="hero">
+    <h1>Discover Fascinating Chicken Facts!</h1>
+    <p>Explore the amazing world of chickens.</p>
+</section>
+
+<main>
+    <h2>10 Fascinating Chicken Facts</h2>
+
+    <article class="fact">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxs7zXQA4OjJPuPIesrkdVYPcvoQ1MGYIPzQ&s" alt="Chickens Can Recognize Faces">
+        <h3>1. Chickens Can Recognize Faces</h3>
+        <p>Chickens have excellent memory and can recognize up to 100 human faces. They use this ability to distinguish between friendly and hostile individuals.</p>
+    </article>
+
+    <article class="fact">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6JmUOsa553dkitP7ZHkuF6zIg21o3va1cQw&s" alt="Chickens Can Dream">
+        <h3>2. Chickens Can Dream</h3>
+        <p>Like many other animals, chickens experience REM sleep, which means they can dream. Studies have shown that chickens have complex dreaming patterns.</p>
+    </article>
+
+    <article class="fact">
+        <img src="https://www.all-creatures.org/articles2/egg-chickens-talk.jpg" alt="Chickens Can Communicate with Each Other">
+        <h3>3. Chickens Can Communicate with Each Other</h3>
+        <p>Chickens have a wide range of vocalizations used to communicate different emotions and warnings to their flock.</p>
+    </article>
+
+    <article class="fact">
+        <img src="https://www.nejad.com/2019/color/swatch/color-wheel.png" alt="Chickens Have Good Color Vision">
+        <h3>4. Chickens Have Good Color Vision</h3>
+        <p>Chickens have better color vision than humans and can see a broader spectrum of colors, including ultraviolet light.</p>
+    </article>
+
+    <article class="fact">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2020/12/duck-chicken-egg-eggs-732x549-thumbnail-732x549.jpg" alt="Chickens Can Lay Eggs without a Rooster">
+        <h3>5. Chickens Can Lay Eggs without a Rooster</h3>
+        <p>Female chickens, or hens, can lay eggs without the presence of a rooster. However, those eggs won't be fertilized and won't hatch into chicks.</p>
+    </article>
+
+    <article class="fact">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/001/635/188/small/two-black-man-footprints-isolated-on-white-vector.jpg" alt="Chickens Have Unique Footprints">
+        <h3>6. Chickens Have Unique Footprints</h3>
+        <p>Each chicken has a unique footprint pattern, much like human fingerprints. This can be used for identification purposes.</p>
+    </article>
+
+    <article class="fact">
+        <img src="https://www.wikihow.com/images/thumb/f/f6/Train-Chickens-Step-3-Version-2.jpg/v4-460px-Train-Chickens-Step-3-Version-2.jpg.webp" alt="Chickens Can Be Trained">
+        <h3>7. Chickens Can Be Trained</h3>
+        <p>Chickens are intelligent animals and can be trained to perform simple tasks and tricks, similar to how dogs are trained.</p>
+    </article>
+
+    <article class="fact">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST4ZRXvYi5FiWxSLB8P_y7xV4isi_Sjpfv9g&s" alt="Chickens Have a Highly Developed Sense of Hearing">
+        <h3>8. Chickens Have a Highly Developed Sense of Hearing</h3>
+        <p>Chickens have an acute sense of hearing and can detect sounds at higher frequencies than humans, which helps them stay alert to potential dangers.</p>
+    </article>
+
+    <article class="fact">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Male_and_female_chicken_sitting_together.jpg" alt="Chickens Are Social Animals">
+        <h3>9. Chickens Are Social Animals</h3>
+        <p>Chickens are social creatures that thrive in flocks. They have a complex social structure and establish pecking orders within their groups.</p>
+    </article>
+
+    <article class="fact">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/034/731/767/small_2x/countdown-numbers-2024-happy-new-year-animation-free-video.jpg" alt="Chickens Can Live a Long Time">
+        <h3>10. Chickens Can Live a Long Time</h3>
+        <p>With proper care, chickens can live up to 10-15 years, though their average lifespan in commercial settings is typically shorter.</p>
+    </article>
+</main>
+
+</body>
+</html>
